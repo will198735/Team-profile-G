@@ -9,5 +9,6 @@ class Manager extends Employee{
 
 
     }
-    getRole()
+    getRole() {}
 }
+module.exports = Manager ;

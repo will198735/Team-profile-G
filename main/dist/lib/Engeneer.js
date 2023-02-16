@@ -6,9 +6,14 @@ class Engeneer extends Employee{
 
         super(name, id, email);
     }
-    getGithub()
+    getGithub() {
+
+    }
 
 
-    getRole()
+    getRole() {
+
+    }
 
 }
+module.exports = Engeneer ;

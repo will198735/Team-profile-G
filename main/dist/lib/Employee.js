@@ -23,7 +23,9 @@ class Employee {
 
     }
 
-    getRole()
+    getRole() {
+
+    }
 
     
 
@@ -36,4 +38,3 @@ const thisEmail = new Employee('recinoswilfredo@gmail.com');
 
 
 
-module.exports = Employee;

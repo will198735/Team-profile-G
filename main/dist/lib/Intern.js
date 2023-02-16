@@ -7,7 +7,8 @@ class Intern extends Employee {
 
         super(name, id, email);
     }
-    getSchool()
+    getSchool() {}
 
-    getRole()
+    getRole() {}
 }
+module.exports = Intern ;
