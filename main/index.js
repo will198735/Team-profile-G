@@ -4,7 +4,8 @@ const employee = require('../lib/Employee');
 const engeneer = require('../lib/Engeneer');
 const intern = require('../lib/Intern');
 const manager = require('../lib/Manager');
-
+// how many card do i have to create?
+// i will try to generate one card first
   const generateHTML = ({ name, id, github, email, school, officeNumber }) =>
   `<!DOCTYPE html>
 <html lang="en">

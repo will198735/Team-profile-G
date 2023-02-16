@@ -9,7 +9,7 @@ class Employee {
 
     }
     
-    
+  
 
 
     getId(){
@@ -30,4 +30,10 @@ class Employee {
 
 
 }
+const thisName = new Employee('Wilfredo');
+const thisId = new Employee(1);
+const thisEmail = new Employee('recinoswilfredo@gmail.com');
+
+
+
 module.exports = Employee;
