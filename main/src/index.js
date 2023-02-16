@@ -5,7 +5,7 @@ const engeneer = require('../lib/Engeneer');
 const intern = require('../lib/Intern');
 const manager = require('../lib/Manager');
 
-const generateHTML = ({ name, id, github, email, school, officeNumber }) =>
+  const generateHTML = ({ name, id, github, email, school, officeNumber }) =>
   `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,20 +16,23 @@ const generateHTML = ({ name, id, github, email, school, officeNumber }) =>
 </head>
 <body>
   <header class="p-5 mb-4 header bg-light">
-    <div class="container">
-      <h1 class="display-4">ID: ${name}</h1>
-      <p class="lead">I am from ${id}.</p>
-      <h3>Example heading <span class="badge bg-secondary">Contact Me</span></h3>
-      <ul class="list-group">
-        <li class="list-group-item">My GitHub username is ${github}</li>
-        <li class="list-group-item">LinkedIn: ${email}</li>
-        <li class="list-group-item">LinkedIn: ${school}</li>
-        <li class="list-group-item">LinkedIn: ${officeNumber}</li>
-      </ul >
-    </div>
   </header>
+
+  <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    ${name}
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">${id}</li>
+    <li class="list-group-item">${email}</li>
+    <li class="list-group-item">${officeNumber}</li>
+    <li class="list-group-item">${github}</li>
+    <li class="list-group-item">${school}</li>
+  </ul>
+</div>
 </body>
 </html>`;
+
 
 inquirer
   .prompt([
@@ -37,21 +40,22 @@ inquirer
       type: 'input',
       name: 'name',
       message: 'What is your name?',
+
     },
     {
       type: 'input',
-      name: 'location',
-      message: 'Where are you from?',
+      name: 'id',
+      message: 'please provide your id',
     },
     {
       type: 'input',
-      name: 'hobby',
-      message: 'What is your favorite hobby?',
+      name: 'email',
+      message: 'please previde your email',
     },
     {
       type: 'input',
-      name: 'food',
-      message: 'What is your favorite food?',
+      name: 'officeNumber',
+      message: 'your office number?',
     },
     {
       type: 'input',
@@ -60,8 +64,8 @@ inquirer
     },
     {
       type: 'input',
-      name: 'linkedin',
-      message: 'Enter your LinkedIn URL.',
+      name: 'school',
+      message: 'the name of your school?.',
     },
   ])
   .then((answers) => {
@@ -71,3 +75,4 @@ inquirer
       err ? console.log(err) : console.log('Successfully created index.html!')
     );
   });
+ 
