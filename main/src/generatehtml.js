@@ -104,6 +104,25 @@ const htmlIntern = intern => {
   `;
 };
 
+const html = [];
+  
+html.push(profile
+    .filter(employee => employee.getRole() === "Manager")
+    .map(manager => generateManager(manager))
+);
+html.push(profile
+    .filter(employee => employee.getRole() === "Engineer")
+    .map(engineer => generateEngineer(engineer))
+    .join("")
+);
+html.push(profile
+    .filter(employee => employee.getRole() === "Intern")
+    .map(intern => generateIntern(intern))
+    .join("")
+);
+
+return html.join("");
+
 
 }
   
