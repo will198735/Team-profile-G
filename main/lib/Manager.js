@@ -9,12 +9,12 @@ class Manager extends Employee{
    
     }
     getOfficeNumber()  {
-      return this.officeNumber
+      return this.officeNumber;
     }
 
 
     getRole() {
-        return 'Manager'
+        return 'Manager';
     }
 }
 module.exports = Manager ;
