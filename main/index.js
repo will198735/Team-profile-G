@@ -1,13 +1,15 @@
-// const Employee = require('./lib/Employee');
 const Engineer = require('./lib/Engeneer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 const inquirer = require('inquirer');
-const path = require('path');
+
+const Employee = require('./lib/Employee');
 const fs = require('fs');
+var path = require('path');
 const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(outputPath, "team.html");
+// const outputPath = path.join(outputPath, "team.html");
 const generateTeam = require('./src/template.js');
+
 
 
 
@@ -44,8 +46,8 @@ function runApp () {
 // OOP Functions
 
 function addManager () { 
-inquirer
-  .prompt([
+
+  inquirer.prompt([
     {
       type: "input",
       name: "managerName",
@@ -150,7 +152,7 @@ function addIntern() {
 function htmlBuilder () {
   console.log("Team created!")
 
-  fs.writeFileSync(outputPath, generateTeam(teamArray), "UTF-8")
+  fs.writeFileSync('team.html', generateTeam(teamArray), "UTF-8")
 
 }
 

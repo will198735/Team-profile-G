@@ -2,9 +2,9 @@ const Employee = require('./Employee');
 
 class Engeneer extends Employee{
     constructor(github){
+        super(name, id, email);
         this.github = github
 
-        super(name, id, email);
     }
     getGithub() {
         return this.github;

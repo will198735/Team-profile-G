@@ -5,7 +5,7 @@ class Employee {
         this.email = email;
     }
     getName() {
-        return this.name
+        return this.name;
         // console.log(`${this.name}`);
 
     }
@@ -14,7 +14,7 @@ class Employee {
 
 
     getId(){
-        return thisId;
+        return this.Id;
         // console.log(`ID ${this.id}`);
 
     }
@@ -36,7 +36,7 @@ class Employee {
 
 
 }
-module.exports = Employee ;
+module.exports = Employee;
 
 
 
