@@ -6,30 +6,36 @@ const generateProfile = team => {
 
 
   const generateManager = manager => {
-   
-  return `  <header class="p-5 mb-4 header bg-light">
-    <h2 class="card-title">${manager.name}</h2>
-    <h2 class="card-title">${manager.getRole()}</h2>
-    </header>hh
-  
-    <div class="card" style="width: 18rem;">
-    <div class="card-header">
-    
-    </div>
-    <ul class="list-group list-group-flush">
+   return `
+
+  <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+  <div class="card-header">
+  <h3 class="card-title">${manager.name}</h3>
+    <h5 class="card-title">${manager.getRole()}</h5>
+
+  </div>
+  <div class="card-body">
+  <ul class="list-group list-group-flush">
       <li class="list-group-item">${manager.id}</li>
       <li class="list-group-item">Email: <a href="mail:${manager.email}"></a></li>
     
       <li class="list-group-item">${manager.officeNumber}</li>
      
     </ul>
+ 
   </div>
+</div>
   `;
 };
+
+
+
+
+
 const generateEngineer = engineer  => { 
    
 
-return `<header class="p-5 mb-4 header bg-light">
+return `<header class="p-2 mb-4 header bg-light">
 <h2 class="card-title">${engineer.name}</h2>
 <h2 class="card-title">${engineer.getRole()}</h2>
 </header>
@@ -52,7 +58,7 @@ return `<header class="p-5 mb-4 header bg-light">
 const generateIntern = intern => {
     
     return `
-    <header class="p-5 mb-4 header bg-light">
+    <header class="p-2 mb-4 header bg-light">
     <h2 class="card-title">${intern.name}</h2>
     <h2 class="card-title">${intern.getRole()}</h2>
     </header>
@@ -113,13 +119,17 @@ return `<!DOCTYPE html>
         </div>
     </div>
 </div>
+
 <div class="container">
     <div class="row">
-        <div class="row team-area col-12 d-flex justify-content-center">
+ 
+        <div class="row team-area col-4 d-flex justify-content-center">
             ${generateProfile(team)}
         </div>
+        
     </div>
 </div>
+
 
 
 </body>
