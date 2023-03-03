@@ -14,7 +14,7 @@ class Intern  {
     }
 
     getRole() {
-        return 'intern';
+        return 'Intern';
     }
 }
-module.exports = Intern ;
+module.exports = Intern;

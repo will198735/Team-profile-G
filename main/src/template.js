@@ -65,7 +65,7 @@ const generateIntern = intern => {
       <li class="list-group-item">${intern.id}</li>
       <li class="list-group-item">Email: <a href="mail:${intern.email}"></a></li>
     
-      <li class="list-group-item">${intern.getSchool}</li>
+      <li class="list-group-item">${intern.getSchool()}</li>
      
     </ul>
   </div>

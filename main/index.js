@@ -118,7 +118,7 @@ function addIntern() {
     
     {
       type: "input",
-      name: "interName",
+      name: "internName",
       message: "What is the intern's name?"
     },
 
@@ -142,6 +142,7 @@ function addIntern() {
 
   ]).then(answers => {
     const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
+    console.log(intern);
     teamArray.push(intern);
     createTeam();
   });
