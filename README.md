@@ -1,19 +1,18 @@
 # Team-profile-G
 
-// <header class=" header bg-light">
-//   //   <h3 class="card-title">${manager.name}</h3>
-//   //   <h5 class="card-title">${manager.getRole()}</h5>
-//   //   </header>hh
-  
-//   //   <div class="card" style="width: 18rem;">
-//   //   <div class="card-header">
-    
-//   //   </div>
-//   //   <ul class="list-group list-group-flush">
-//   //     <li class="list-group-item">${manager.id}</li>
-//   //     <li class="list-group-item">Email: <a href="mail:${manager.email}"></a></li>
-    
-//   //     <li class="list-group-item">${manager.officeNumber}</li>
-     
-//   //   </ul>
-//   // </div>
+## Description
+This is a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.
+
+
+## Installation
+
+
+## Usage
+Navigate into your terminal, type node index.js you will be prompt with four optios manager, Engineer, Intern and the option to terminate the questions. select one and a serie of questions will pop up.
+
+## Credit
+
+
+
+
+## License
