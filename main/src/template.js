@@ -29,52 +29,53 @@ const generateProfile = team => {
 };
 
 
-
-
-
 const generateEngineer = engineer  => { 
    
 
-return `<header class="p-2 mb-4 header bg-light">
-<h2 class="card-title">${engineer.name}</h2>
-<h2 class="card-title">${engineer.getRole()}</h2>
-</header>
 
-<div class="card" style="width: 18rem;">
+return `
+<div class="card text-bg-success mb-3" style="max-width: 18rem;">
 <div class="card-header">
+<h3 class="card-title">${engineer.name}</h3>
+  <h5 class="card-title">${engineer.getRole()}</h5>
 
 </div>
+<div class="card-body">
 <ul class="list-group list-group-flush">
-  <li class="list-group-item">${engineer.id}</li>
-  <li class="list-group-item">Email: <a href="mail:${engineer.email}"></a></li>
-  <li class="list-group-item">GitHub: <a href="https://github.com/${engineer.getGithub()}" target="_blank" rel="noopener noreferrer"></a></li>
+    <li class="list-group-item">${engineer.id}</li>
+    <li class="list-group-item">Email: <a href="mail:${engineer.email}"></a></li>
   
- 
-</ul>
+    <li class="list-group-item">${engineer.officeNumber}</li>
+   
+  </ul>
+
 </div>
+</div>
+
 `;
 
 };
 const generateIntern = intern => {
     
     return `
-    <header class="p-2 mb-4 header bg-light">
-    <h2 class="card-title">${intern.name}</h2>
-    <h2 class="card-title">${intern.getRole()}</h2>
-    </header>
-  
-    <div class="card" style="width: 18rem;">
+    <div class="card text-bg-success mb-3" style="max-width: 18rem;">
     <div class="card-header">
-    
+    <h3 class="card-title">${intern.name}</h3>
+      <h5 class="card-title">${intern.getRole()}</h5>
+  
     </div>
+    <div class="card-body">
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">${intern.id}</li>
-      <li class="list-group-item">Email: <a href="mail:${intern.email}"></a></li>
-    
-      <li class="list-group-item">${intern.getSchool()}</li>
-     
-    </ul>
+        <li class="list-group-item">${intern.id}</li>
+        <li class="list-group-item">Email: <a href="mail:${intern.email}"></a></li>
+      
+        <li class="list-group-item">${intern.officeNumber}</li>
+       
+      </ul>
+   
+    </div>
   </div>
+
   `;
 };
 
