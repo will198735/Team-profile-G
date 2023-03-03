@@ -8,19 +8,19 @@ const generateProfile = team => {
   const generateManager = manager => {
    
   return `  <header class="p-5 mb-4 header bg-light">
-    <h2 class="card-title">${manager.getName()}</h2>
+    <h2 class="card-title">${manager.name}</h2>
     <h2 class="card-title">${manager.getRole()}</h2>
-    </header>
+    </header>hh
   
     <div class="card" style="width: 18rem;">
     <div class="card-header">
     
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">${manager.getId()}</li>
-      <li class="list-group-item">Email: <a href="mail:${manager.getEmail()}"></a></li>
+      <li class="list-group-item">${manager.id}</li>
+      <li class="list-group-item">Email: <a href="mail:${manager.email}"></a></li>
     
-      <li class="list-group-item">${officeNumber}</li>
+      <li class="list-group-item">${manager.officeNumber}</li>
      
     </ul>
   </div>
@@ -30,7 +30,7 @@ const generateEngineer = engineer  => {
    
 
 return `<header class="p-5 mb-4 header bg-light">
-<h2 class="card-title">${engineer.getName()}</h2>
+<h2 class="card-title">${engineer.name}</h2>
 <h2 class="card-title">${engineer.getRole()}</h2>
 </header>
 
@@ -39,8 +39,8 @@ return `<header class="p-5 mb-4 header bg-light">
 
 </div>
 <ul class="list-group list-group-flush">
-  <li class="list-group-item">${engineer.getId()}</li>
-  <li class="list-group-item">Email: <a href="mail:${engineer.getEmail()}"></a></li>
+  <li class="list-group-item">${engineer.id}</li>
+  <li class="list-group-item">Email: <a href="mail:${engineer.email}"></a></li>
   <li class="list-group-item">GitHub: <a href="https://github.com/${engineer.getGithub()}" target="_blank" rel="noopener noreferrer"></a></li>
   
  
@@ -53,7 +53,7 @@ const generateIntern = intern => {
     
     return `
     <header class="p-5 mb-4 header bg-light">
-    <h2 class="card-title">${intern.getName()}</h2>
+    <h2 class="card-title">${intern.name}</h2>
     <h2 class="card-title">${intern.getRole()}</h2>
     </header>
   
@@ -62,8 +62,8 @@ const generateIntern = intern => {
     
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">${intern.getId()}</li>
-      <li class="list-group-item">Email: <a href="mail:${intern.getEmail()}"></a></li>
+      <li class="list-group-item">${intern.id}</li>
+      <li class="list-group-item">Email: <a href="mail:${intern.email}"></a></li>
     
       <li class="list-group-item">${intern.getSchool}</li>
      
